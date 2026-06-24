@@ -1,17 +1,15 @@
 # Product Catalog 
 
-A backend service built with Node.js, Express, MySQL and TiDB Cloud that supports browsing a large catalog of products with efficient filtering and cursor-based pagination.
+A modern, responsive product catalog frontend built with React and Tailwind CSS, showcasing the backend API with real-time cursor-based pagination and product filter.
 
 ## Overview
+This frontend application serves as the user interface for the CodeVector Labs product catalog assignment. It demonstrates:
 
-This project was developed as part of the CodeVector Internship Take-Home Assignment.
-
-The system generates and stores 200,000 products and provides APIs to:
-
-- Browse products sorted by newest first
-- Filter products by category
-- Paginate efficiently through large datasets in Batches of 20 Products
-- Handle continuously changing data without showing duplicate or missing products
+- Real-time product browsing with cursor-based pagination
+- Category filtering with visual feedback
+- Search functionality for product discovery
+- Responsive design optimized for all screen sizes
+- Professional UI with Tailwind CSS
 
 ---
 
