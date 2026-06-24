@@ -1,5 +1,4 @@
 import React from 'react';
-import { format } from 'date-fns';
 
 const ProductCard = ({ product }) => {
   const formatPrice = (price) => {
@@ -10,10 +9,16 @@ const ProductCard = ({ product }) => {
     }).format(price);
   };
 
+  // Native JavaScript date formatting (no date-fns)
   const formatDate = (date) => {
     if (!date) return 'N/A';
     try {
-      return format(new Date(date), 'MMM d, yyyy');
+      const d = new Date(date);
+      return d.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
     } catch {
       return 'Invalid date';
     }
