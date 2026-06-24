@@ -1,4 +1,4 @@
-# Product Catalog Backend
+# Product Catalog 
 
 A backend service built with Node.js, Express, MySQL and TiDB Cloud that supports browsing a large catalog of products with efficient filtering and cursor-based pagination.
 
