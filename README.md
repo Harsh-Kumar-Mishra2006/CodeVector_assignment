@@ -1,16 +1,45 @@
-# React + Vite
+# Product Catalog Backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A backend service built with Node.js, Express, MySQL and TiDB Cloud that supports browsing a large catalog of products with efficient filtering and cursor-based pagination.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was developed as part of the CodeVector Internship Take-Home Assignment.
 
-## React Compiler
+The system generates and stores 200,000 products and provides APIs to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browse products sorted by newest first
+- Filter products by category
+- Paginate efficiently through large datasets in Batches of 20 Products
+- Handle continuously changing data without showing duplicate or missing products
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React.js
+- Vite
+- Tailwind.css
+
+---
+
+## Local Setup
+
+### Clone Repository
+
+```bash
+git clone <https://github.com/Harsh-Kumar-Mishra2006/CodeVector_assignment>
+cd CodeVector_assignment
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Dependencies
+
+```bash
+npm run dev
+```
